@@ -63,4 +63,7 @@ seamlessly to create a compliant and practical environment
 5. Train the ResNet-50 model using a standard training loop with loss computation, backpropagation, and optimization.
 6. Evaluate the trained ResNet-50 model on a test dataset to calculate accuracy.
 
+# Sample Results
+
+
 
