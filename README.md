@@ -65,5 +65,13 @@ seamlessly to create a compliant and practical environment
 
 # Sample Results
 
+# Test Image
+
+![Train](https://github.com/Sriram8452/Deep-Q-Learning-for-Emotional-Lighting/assets/118708032/4d1eecda-55d5-43ab-b19b-fa67e44a276a)
+
+# Test Result
+
+![image](https://github.com/Sriram8452/Deep-Q-Learning-for-Emotional-Lighting/assets/118708032/1ddbf6b0-78cd-476e-b7ec-3034aac60468)
+
 
 
