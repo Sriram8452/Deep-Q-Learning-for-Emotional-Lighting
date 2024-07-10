@@ -12,3 +12,26 @@ feelings. Performance of the system is evaluated measuring different metrics.Res
 light form hella emotional lighting. This reveals promising uses of this work in smart homes, therapy
 spaces and interactive installations
 
+# Problem Definition
+Facial expression emotion detection is a hard The one that is quite a challenging task and needs to be
+dealt with highly resilient models, different examples of expressions, lighted circumstances and
+individual differences. It often performs poorly on traditional methods leading to discrepancies in the
+predictions.The project solution by leveraging the workhorse of the field:reinforcement learning with
+deep Q-learning. Deep learning for improved predictive power of the mode emotions accurately. Further,translation of these real-time lighting adjustments from emotional predictions layered
+complexity that needs to be smoothly executed combination of hardware and software modules.
+
+# Motivation
+This project was inspired from the increasing number of studies on human emotion-adaptive smart
+environments. But these environments can potentially deliver an amazing user experience, by offering a
+tailor made and highly responsive environment. For example, lighting which caters depending on the
+emotional state of Patients can enhance therapeutic settings by promoting relaxation or stimulation. Smart homes also adjust mood lighting depending on the emotional level of people inside, making
+home a more comfortable and lively space as well. There is huge possibility of use cases varying from
+entertainment and gaming to health care and education which makes this area interesting as well. 
+
+# Objective
+The main purpose of this research is to come up with a deep Q-learning model that can be used in
+predicting human emotions using facial expressions. Moreover, the project seeks to link these forecasts
+to lighting outcomes that would result in an adaptive environment. Accordingly, the tasks that will be
+conducted include the pre-processing of data sets for uniformity, developing and training a deep Q- network based on a pretrained ResNet50 model and assessing its performance through extensive
+metrics. Finally, this project aims at proving that deep reinforcement learning can be applied for
+emotional lighting applications.
