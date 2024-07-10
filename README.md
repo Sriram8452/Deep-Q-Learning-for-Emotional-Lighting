@@ -12,21 +12,13 @@ feelings. Performance of the system is evaluated measuring different metrics.Res
 light form hella emotional lighting. This reveals promising uses of this work in smart homes, therapy
 spaces and interactive installations
 
-# Problem Definition
+# Problem
 Facial expression emotion detection is a hard The one that is quite a challenging task and needs to be
 dealt with highly resilient models, different examples of expressions, lighted circumstances and
 individual differences. It often performs poorly on traditional methods leading to discrepancies in the
 predictions.The project solution by leveraging the workhorse of the field:reinforcement learning with
 deep Q-learning. Deep learning for improved predictive power of the mode emotions accurately. Further,translation of these real-time lighting adjustments from emotional predictions layered
 complexity that needs to be smoothly executed combination of hardware and software modules.
-
-# Motivation
-This project was inspired from the increasing number of studies on human emotion-adaptive smart
-environments. But these environments can potentially deliver an amazing user experience, by offering a
-tailor made and highly responsive environment. For example, lighting which caters depending on the
-emotional state of Patients can enhance therapeutic settings by promoting relaxation or stimulation. Smart homes also adjust mood lighting depending on the emotional level of people inside, making
-home a more comfortable and lively space as well. There is huge possibility of use cases varying from
-entertainment and gaming to health care and education which makes this area interesting as well. 
 
 # Objective
 The main purpose of this research is to come up with a deep Q-learning model that can be used in
@@ -36,14 +28,39 @@ conducted include the pre-processing of data sets for uniformity, developing and
 metrics. Finally, this project aims at proving that deep reinforcement learning can be applied for
 emotional lighting applications.
 
-# LITERATURE SURVEY
-Emotion detection has been one of the most researched issues in computer vision. The methodology
-used in past research applied manually crafted features combined with traditional machine learning
-algorithms that struggle to handle the complexity of facial emotions. With deep learning, CNNs which
-are substantially more accurate than others approaches have been used as a standard in emotion
-recognition. Recent research on transfer learning has utilized big data to explore the deployment of
-trained ResNet model. In addition to that, while reinforcement learning has shown promise across
-several applications, its application on emotion recognition and adaptive lighting are less explored. Inspired by recent advancements a particularly deep Q-learning with pre-trained ResNet50 goal of this
-effort is to improve on the weaknesses in earlier (end-to-end model-free) approaches.
+# Architecture and Working
+
+The system design consists of a number of components. The first is the image preprocessing pipeline
+that goes from ensuring image consistency (by removing ICC profiles and applying transformations
+such as resizing, normalization and data augmentation), to the custom data set class, which handles
+loading and processing images, converting them to grayscale, which is necessary in order for it to be
+compatible with the deep Q-network training requirements. Following this is our model architecture
+that is based on a pre-trained ResNet50 that was then modified to include a fully connected layer for
+emotion classification. To further enhance the models robustness we applied data augmentation
+techniques such as random rotations, flips and colour littering. Finally there is the emotion-data lighting
+class, responsible for mapping predicted emotions to specific lighting colours thus achieving seamless
+integration with IoT enabled lighting systems.
+
+![image](https://github.com/Sriram8452/Deep-Q-Learning-for-Emotional-Lighting/assets/118708032/f45037ad-251b-4ec8-8b46-fbe709c29185)
+
+The gadget layout is designed to make certain efficiency and actual-time response. It starts with
+information preprocessing, in which pix are loaded, converted and superior earlier than being
+dispatched to the deep Q network. Based on ResNet50, the Q-community tactics these pix and predicts
+sensitivity. The expected sensitivities are then mapped to a particular light coloration the usage of the
+default mapping module. The gadget has a control module that interfaces with an IoT-enabled lights
+device, adjusting lighting fixtures in actual time primarily based on predicted temper This gadget
+guarantees a glide from picture input to light output of the machine, with each element interacting
+seamlessly to create a compliant and practical environment
+
+![image](https://github.com/Sriram8452/Deep-Q-Learning-for-Emotional-Lighting/assets/118708032/0880de1c-3be5-4e44-86ed-f3bf8d4df1ed)
+
+# Running instructions
+
+1. Install all the packages mentioned in the 'Requirements' section for the smooth running of this project.
+2. Organize your dataset with separate folders for training and testing images. Each folder should have subfolders named according to the labels of the images (e.g., "anger", "happiness").
+3. Define a Deep Q-Network (DQN) with a few fully connected layers for reinforcement learning. This model is used to interact with the custom environment.
+4. Create a custom environment class that simulates interactions. The environment provides state information, processes actions, and returns rewards and done flags.
+5. Train the ResNet-50 model using a standard training loop with loss computation, backpropagation, and optimization.
+6. Evaluate the trained ResNet-50 model on a test dataset to calculate accuracy.
 
 
