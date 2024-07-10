@@ -1,4 +1,4 @@
-# Deep-Q-Learning-for-Emotional-Lighting
+# Deep Q-Learning for Emotional Lighting
 
 # Introduction
 
