@@ -35,3 +35,15 @@ to lighting outcomes that would result in an adaptive environment. Accordingly, 
 conducted include the pre-processing of data sets for uniformity, developing and training a deep Q- network based on a pretrained ResNet50 model and assessing its performance through extensive
 metrics. Finally, this project aims at proving that deep reinforcement learning can be applied for
 emotional lighting applications.
+
+# LITERATURE SURVEY
+Emotion detection has been one of the most researched issues in computer vision. The methodology
+used in past research applied manually crafted features combined with traditional machine learning
+algorithms that struggle to handle the complexity of facial emotions. With deep learning, CNNs which
+are substantially more accurate than others approaches have been used as a standard in emotion
+recognition. Recent research on transfer learning has utilized big data to explore the deployment of
+trained ResNet model. In addition to that, while reinforcement learning has shown promise across
+several applications, its application on emotion recognition and adaptive lighting are less explored. Inspired by recent advancements a particularly deep Q-learning with pre-trained ResNet50 goal of this
+effort is to improve on the weaknesses in earlier (end-to-end model-free) approaches.
+
+
